@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import TodoList from "@/components/Todos/TodoList";
 
 export default function Home() {
   return (
@@ -19,6 +22,11 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+        
+        <div>
+          <p>This is an example of global state</p>
+          <TodoList />
+        </div>
 
         <div className={styles.ctas}>
           <a
